@@ -43,3 +43,11 @@ under negation, evaluates monolingual and multilingual LMs across four
 lexical-complexity levels, and uses mechanistic analysis to attribute failures
 to tokenisation artifacts and attention collapse.
 *Code: [oszkarurban/l95-minimalpair](https://github.com/oszkarurban/l95-minimalpair)*
+
+### [University of Cambridge — Assessing the Transferability of Text LLMs for Protein Inverse Folding via Structural Tokenization](Cambridge_LLM_proteininversefolding_GNN.pdf)
+Discretises 3D protein backbones into 1D token strings (Foldseek's 3Di alphabet
+and C-α coordinate strings) and probes whether linguistic priors from a
+pretrained Llama-3-8B transfer to inverse protein folding; LoRA fine-tuning
+recovers meaningful sequence-recovery gains over a randomly initialised
+baseline, showing that text-LLM inductive biases provide a usable foundation
+for protein design without architectural changes.
