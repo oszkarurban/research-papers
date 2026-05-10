@@ -7,16 +7,6 @@ and computational linguistics for low-resource languages.
 
 ## Papers
 
-### Adaptive Speculative Decoding for Chain-of-Thought Reasoning Models
-Forked SGLang to replace the static draft-tree configuration used by current
-speculative decoders with an adaptive controller that reads internal signals
-from the residual stream — token-level entropy, hidden-layer activation
-patterns, and reasoning-dynamics features across the CoT trace — and uses them
-to gate speculative-tree expansion at inference time, relaxing during
-exploratory thinking phases and tightening during high-stakes answer phases.
-Achieves ~30% throughput improvement over SoTA EAGLE-3.
-*Code available on request.*
-
 ### [L101 — Improving MCQ Performance via Activation Steering of Query Styles](L101_activation_steering_for_mcq.pdf)
 Extracts persona vectors (polite, insulting, urgent, …) from internal LLM
 activations and steers along them at inference time, improving accuracy on
@@ -30,6 +20,16 @@ agents (BLIP-2 / FLAN-T5), increasing the length of enforceable adversarial
 captions from 4 to 19 tokens via Adam optimisation and a custom
 gradient-friendly image preprocessor.
 *Code: [oszkarurban/pgd](https://github.com/oszkarurban/pgd)*
+
+### Adaptive Speculative Decoding for Chain-of-Thought Reasoning Models
+Replace the static draft-tree configuration used by current
+speculative decoders with an adaptive controller that reads internal signals
+from the residual stream — token-level entropy, hidden-layer activation
+patterns, and reasoning-dynamics features across the CoT trace — and uses them
+to gate speculative-tree expansion at inference time, relaxing during
+exploratory thinking phases and tightening during high-stakes answer phases.
+Achieves ~30% throughput improvement over SoTA EAGLE-3.
+*Code available on request.*
 
 ### [L205 — Multimodal Framework for Alzheimer's Disease Classification and Stable Attribution](L205_alzheimers_multimodal.pdf)
 Joint work fusing 3D T1-weighted MRI with structured clinical text (3D ViT +
